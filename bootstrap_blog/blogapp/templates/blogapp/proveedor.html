@@ -1,0 +1,19 @@
+{% extends 'blogapp/layout.html' %}
+{% block content %}
+<!-- {% load static %} -->
+
+{% load crispy_forms_tags %}
+
+<form action "blogapp/proveedor.html" method="post">
+
+  {% csrf_token %}
+  <h1> Ingreso de Proveedores </h1>
+
+  {{formp|crispy}}
+
+  <input type="submit"></input>
+
+</form>
+
+
+{% endblock %}
